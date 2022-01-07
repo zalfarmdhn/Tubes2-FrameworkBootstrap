@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow: 0px 7px 30px rgba(0, 0, 0, 0.09);
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  padding: 15px;
+}
+
+.navbar a span {
+  color: #f0969f;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar-brand i {
+  margin-right: 5px;
+}
+
+.nav-item {
+  font-size: 17px;
+  padding-right: 20px;
+}
+
+.banner {
+  height: 80vh;
+  margin-top: 8vh;
+  background: linear-gradient(rgba(220, 53, 69, 0.5), rgba(220, 53, 69, 0.5)),
+    url(../img/banner.jpg);
+  background-size: cover;
+}
+
+.banner-content {
+  height: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about {
+  padding: 150px 0;
+  margin-bottom: 30px;
+}
+
+.about p .fas {
+  margin-right: 3px;
+}
+
+.about h6 {
+  color: #666;
+}
+
+.detail {
+  letter-spacing: 2px;
+}
+
+.client-info {
+  padding: 80px 0;
+  background: linear-gradient(rgba(220, 53, 69, 0.85), rgba(220, 53, 69, 0.85)),
+    url(../img/client.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.client-info h1,
+.client-info p {
+  color: #fff;
+}
+
+.client-info h1 {
+  font-weight: 600;
+}
+
+.services {
+  padding: 150px 0;
+}
+
+.services p {
+  color: #dc3545;
+}
+
+.services h6 {
+  color: #666;
+}
+
+.service-tab {
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.service-tab p {
+  color: #666;
+}
+
+.portfolio .detail {
+  color: #dc3545;
+}
+
+.portfolio h6 {
+  color: #666;
+}
+
+.card {
+  box-shadow: var(--shadow);
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  color: #666;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-body h5 {
+  font-weight: 700;
+}
+
+.card-detail {
+  font-size: 1.1rem;
+}
+
+.form-floating label {
+  color: #666;
+}
+
+.contact .detail {
+  color: rgba(220, 53, 69, 0.85);
+}
+
+.contact p {
+  color: #666;
+}
+
+.contact .row i {
+  margin-right: 1rem;
+}
+
+footer {
+  background: #dc3545;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer .icon i {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none !important;
+}
